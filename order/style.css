@@ -1,0 +1,169 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,800,700,600,300);
+
+*{
+	padding: 0;
+	margin: 0;
+}
+body{
+	font-family: 'Open Sans', sans-serif;
+}
+i{
+	color: white;
+}
+html, body{
+	height: 100%;
+	background-color: #eee;
+}
+nav{
+    background: gray;
+    height: 80px;
+    width: 100%;
+  }
+  label.logo{
+    color: white;
+    font-size: 35px;
+    line-height: 80px;
+    padding: 0 100px;
+    font-weight: bold;
+  }
+  nav ul{
+    float: right;
+    margin-right: 20px;
+  }
+  nav ul li{
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+  }
+  nav ul li a{
+    color: white;
+    font-size: 17px;
+    padding: 7px 13px;
+    border-radius: 3px;
+    text-transform: uppercase;
+    text-decoration: none;
+  }
+  nav a:hover{
+    color:  skyblue;
+    transition: .5s;
+  }
+  .checkbtn{
+    font-size: 30px;
+    color: white;
+    float: right;
+    line-height: 80px;
+    margin-top: 20px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+  }
+  #check{
+    display: none;
+  }
+  span{
+    color: #0082e6;
+  }
+.produk{
+	width: 100%;
+	height: 850px;
+}
+.satu {
+	padding: 20px;
+	float: left;
+}
+
+.satu img {
+	height: 250px;
+	width: 290px;
+	padding-right: 20px;
+	padding-top: 10px;
+}
+
+.satu h3 {
+	padding-bottom: 10px;
+}
+
+.satu h2{
+	border-bottom: 5px solid black;
+	width: 290px;
+	color: black;
+}
+
+.button{
+	border-radius: 20px;
+	padding-left: 20px;
+	padding-right: 20px;
+	text-decoration: none;
+	background-color: green;
+	color: white;
+	transition: 0.5s;
+}
+
+.button:hover {
+	transition: 0.5s;
+	background-color: darkblue;	
+}
+
+@media (max-width: 952px){
+	label.logo{
+		font-size: 30px;
+		padding-left: 50px;
+	  }
+	  nav ul li a{
+		font-size: 16px;
+	  }
+
+	html, body {
+		height: 100%;
+		background: silver;
+		}
+	
+		.produk{
+		width:100%;
+		height: 850px;
+		float: center;
+		}
+		
+    
+  }
+  @media (max-width: 858px){
+	.checkbtn{
+		display: block;
+	  }
+	  ul{
+		position: fixed;
+		width: 100%;
+		height: 100vh;
+		background: gray;
+		top: 80px;
+		left: -100%;
+		text-align: center;
+		transition: all .5s;
+	  }
+	  nav ul li{
+		display: block;
+		margin: 50px 0;
+		line-height: 30px;
+	  }
+	  nav ul li a{
+		font-size: 20px;
+	  }
+	  a:hover,a.active{
+		background: none;
+		color: #0082e6;
+	  }
+	  #check:checked ~ ul{
+		left: 0;
+	  }
+    html, body {
+	height: 100%;
+	background: silver;
+	}
+
+	.produk{
+		width:100%;
+		height: 850px;
+		float: center;
+	}
+  }
+
